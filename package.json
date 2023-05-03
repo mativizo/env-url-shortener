@@ -1,0 +1,30 @@
+{
+  "name": "env-url-shortener",
+  "version": "1.0.0",
+  "description": "ENV URL Shortener.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mativizo/env-url-shortener.git"
+  },
+  "keywords": [
+    "url",
+    "url-shortener",
+    "env",
+    "url-shrinker"
+  ],
+  "author": "Mativizo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mativizo/env-url-shortener/issues"
+  },
+  "homepage": "https://github.com/mativizo/env-url-shortener#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "fastify": "^4.17.0"
+  }
+}
