@@ -64,7 +64,11 @@ function main() {
     for (let i = 0; i < Object.keys(urls).length; i++) {
         const key = Object.keys(urls)[i]
         const value = urls[key]
-        fastify.get(`/${value.id}`, async (request, reply) => {
+        
+        let url = `/${value.id}`
+        if (value.id == "*") url = `/`
+        
+        fastify.get(url, async (request, reply) => {
             reply.redirect(value.go)
         })
     }

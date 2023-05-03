@@ -41,3 +41,13 @@ X_2_GO=google.com
 X_3_ID=gh
 X_3_GO=https://github.com
 ```
+
+### How to set redirect for main domain?
+
+If you want to redirect main domain, you can set link like this:
+```
+VAR_PREFIX=URL_
+URL_MAIN_ID=*
+URL_MAIN_GO=google.com
+```
+by using `*` in `ID` (slug) the main domain or `/` route will redirect to selected url.
